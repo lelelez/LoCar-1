@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="@drawable/ic_menu"
+        android:showAsAction="always"
+        android:title="Opções">
+        <menu>
+            <item
+                android:id="@+id/novoUsuario"
+                android:icon="@drawable/ic_novousuario"
+                android:showAsAction="always"
+                android:title="Novo usuário"/>
+            
+            <item
+                android:id="@+id/novoCarro"
+                android:icon="@drawable/ic_novocarro"
+                android:showAsAction="always"
+                android:title="Novo carro"/>
+            
+            <item
+                android:id="@+id/mapa"
+                android:icon="@drawable/ic_mapa"
+                android:showAsAction="always"
+                android:title="Mapa"/>
+        </menu>
+    </item>
+
+</menu>
