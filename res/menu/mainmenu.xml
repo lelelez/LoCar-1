@@ -7,22 +7,11 @@
         android:title="Opções">
         <menu>
             <item
-                android:id="@+id/novoUsuario"
-                android:icon="@drawable/ic_novousuario"
+                android:id="@+id/novoAlterarCadastro"
+                android:icon="@drawable/ic_action_alterar"
                 android:showAsAction="always"
-                android:title="Novo usuário"/>
+                android:title="Alterar cadastro"/>
             
-            <item
-                android:id="@+id/novoCarro"
-                android:icon="@drawable/ic_novocarro"
-                android:showAsAction="always"
-                android:title="Novo carro"/>
-            
-            <item
-                android:id="@+id/mapa"
-                android:icon="@drawable/ic_mapa"
-                android:showAsAction="always"
-                android:title="Mapa"/>
         </menu>
     </item>
 

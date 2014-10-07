@@ -1,14 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:baselineAligned="true" >
+    android:orientation="vertical" >
 
-    <ListView
-        android:id="@+id/mainLista"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/tituloMainMenu"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1" >
-    </ListView>
-    
-</LinearLayout>
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:text="Menu"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnAlugarVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tituloMainMenu"
+        android:text="Visualizar veículo"
+        android:drawableLeft="@drawable/ic_menu_carro"
+        android:drawablePadding="-48px" />
+
+    <Button
+        android:id="@+id/btnListarVeiculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAlugarVeiculo"
+        android:text="Listar veículos"
+        android:drawableLeft="@drawable/ic_menu_lista"
+        android:drawablePadding="-48px" />
+
+    <Button
+        android:id="@+id/btnExtrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnListarVeiculo"
+        android:text="Extrato fiscal"
+        android:drawableLeft="@drawable/ic_menu_extrato"
+        android:drawablePadding="-48px" />
+
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnExtrato"
+        android:text="Mapa"
+        android:drawableLeft="@drawable/ic_menu_mapa"
+        android:drawablePadding="-48px" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Sair"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_menu_sair"
+        android:drawablePadding="-48px" />
+
+</RelativeLayout>
